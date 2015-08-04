@@ -59,7 +59,6 @@ elsif options[:test]
     end
   end
 else
-  # $#$
   trap("SIGINT") { exit result }
 
   str.each do |line|
