@@ -59,7 +59,14 @@ elsif options[:test]
     end
   end
 else
-  puts "You must specify exactly 1 of --count, --ratio, or --test"
+  # $#$
+  trap("SIGINT") { exit result }
+
+  str.each do |line|
+    if line =~ DISALLOWED
+      puts line
+    end
+  end
 end
 
 exit result
