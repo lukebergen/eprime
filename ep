@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
+
 DISALLOWED = / be | being | been | am | is | isn't | are | aren't | was | wasn't | were | weren't |'m |'re |'s | ain't | hain't | whatcha | yer /
 
 options = {}
